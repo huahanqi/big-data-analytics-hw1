@@ -7,7 +7,7 @@ spark = SparkSession.builder \
     .getOrCreate()
 
 # Load the dataset
-file_path = "./2022.01_WAVES-ACCESS-RECORDS-10x.csv"
+file_path = "./2022.04_WAVES-ACCESS-RECORDS.csv"
 df = spark.read.csv(file_path, header=True, inferSchema=True)
 
 # Convert DataFrame to RDD for MapReduce operations
