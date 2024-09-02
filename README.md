@@ -1,4 +1,4 @@
-# Big Data Analytics
+# Mining the White House visitor Log dataset using PySpark
 
 ## Background
 
