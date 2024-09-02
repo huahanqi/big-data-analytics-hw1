@@ -2,7 +2,7 @@
 
 ## Background
 
-This is the assignment 1 for Big Data Sys & Analytics - CS-6220-A at GT. I choose to finish Option 2.2 where it gives us a hand-on experience on solving a real-world data system problem.
+This is Assignment 1 for the Big Data Systems & Analytics course (CS-6220) at Georgia Tech. I chose to complete Option 2.2, which provides hands-on experience in solving a real-world data systems problem.
 
 ## Dataset
 
@@ -12,7 +12,7 @@ Most recent updated dataset can be found on the official website of whitehouse: 
 
 ## Packages and Tools
 
-I used pyspark for this assignment. Specifically, I took advantage of two different librarys in spark for this assignment. First, I used the MapReduce approach to solve this problem (See map_reduce_style.py). In particular, I wrote RDD-based code that mimics the map and reduce steps in traditional Hadoop. Moreover, I realized that spark provides a cleaner and more optimized way to work with the structured dataset. So I adapted the DataFrame API as the second way to validate my answer (see dataframe_style.py). In this approach, I used APIs from pyspark.sql that allows users to query data a lot like making a sql query, where the Hadoop MapReduce is foundation underneath this APIs.
+For this assignment, I used PySpark. Specifically, I leveraged two different libraries within Spark. First, I implemented the MapReduce approach to address the problem (see map_reduce_style.py). This involved writing RDD-based code that mimics the traditional Hadoop MapReduce steps. Additionally, I explored Spark's cleaner and more optimized method for working with structured datasets by adapting the DataFrame API as a second approach to validate my results (see dataframe_style.py). This method utilizes APIs from pyspark.sql, allowing users to query data similarly to SQL, with Hadoop MapReduce as the underlying foundation.
 
 ## Code templates
 
@@ -20,9 +20,9 @@ The initial code templates are generated from ChatGPT 4o.
 
 ## Experiments
 
-I used the datasets from Jan 2022 to April 2022 for this assignment, where data for Jan 2022 has 1186 entries, Feb 2022 has 2156 entrie (1.82x of Jan 2022), March 2022 has 6066 entries (5.11x of Jan 2022), and April 2022 has 13525 entries (11.4x of Jan 2022).
+For this assignment, I used the datasets from January 2022 to April 2022. The January 2022 dataset contains 1,186 entries, February 2022 has 2,156 entries (1.82x of January 2022), March 2022 has 6,066 entries (5.11x of January 2022), and April 2022 has 13,525 entries (11.4x of January 2022).
 
-The two scripts are doing the exactly same thing but using different approaches. Specifically, it calculates:
+The two scripts perform the same tasks but using different approaches. Specifically, they calculate:
 
 1. The 10 most frequent visitors (NAMELAST, NAMEFIRST, NAMEMID) to the White House.
 2. The 10 most frequently visited people (visitee_namelast, visitee_namefirst) in the White House.
@@ -30,7 +30,7 @@ The two scripts are doing the exactly same thing but using different approaches.
 4. The 3 most frequent meeting locations.
 5. The 10 most frequent callers.
 
-I ran the map_reduce_style.py script for all these 4 datasets and record the times spent to run the script for each dataset. In addition, I also ran the dataframe_style.py on these datasets for comparision.
+I ran the `map_reduce_style.py` script on all four datasets and recorded the execution times for each. Additionally, I ran the `dataframe_style.py` script on these datasets for comparison.
 
 ## Results
 
@@ -559,6 +559,6 @@ I ran the map_reduce_style.py script for all these 4 datasets and record the tim
 
 a. The results indicate that both scripts (`dataframe_style` and `map_reduce_style`) generate identical summary statistics, demonstrating consistency in their outputs.
 
-b. The `dataframe_style` approach exhibits more stable execution times as the input dataset size increases, highlighting its efficiency in handling larger datasets.
+b. The `map_reduce_style` approach emulates the traditional Hadoop MapReduce process, resulting in a linear increase in execution time as the dataset size grows. In contrast, the `dataframe_style` method demonstrates more consistent execution times as the dataset size increases, underscoring its efficiency in processing larger datasets.
 
 c. Unlike Hadoop MapReduce, Spark's runtime does not scale linearly with the growth in dataset size, which aligns with the theoretical concepts discussed in class regarding Spark's performance advantages.
