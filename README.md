@@ -14,9 +14,9 @@ Most recent updated dataset can be found on the official website of whitehouse: 
 
 For this assignment, I used PySpark. Specifically, I leveraged two different libraries within Spark. First, I implemented the MapReduce approach to address the problem (see map_reduce_style.py). This involved writing RDD-based code that mimics the traditional Hadoop MapReduce steps. Additionally, I explored Spark's cleaner and more optimized method for working with structured datasets by adapting the DataFrame API as a second approach to validate my results (see dataframe_style.py). This method utilizes APIs from pyspark.sql, allowing users to query data similarly to SQL, with Hadoop MapReduce as the underlying foundation.
 
-## Code templates
+## Acknowledgement
 
-The initial code templates are generated from ChatGPT 4o.
+This code is developed based on the inspiration from and enhancements to some great open-source examples. Specifically, the MapReduce approach draws from examples provided in this repository: https://github.com/knelleralex/MapReduce_example/tree/master. The DataFrame approach is informed by examples from this repository: https://github.com/krishnaik06/Pyspark-With-Python/tree/main. Additionally, I frequently consulted Stack Overflow for various coding solutions (https://stackoverflow.com).
 
 ## Experiments
 
