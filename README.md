@@ -36,7 +36,7 @@ I ran the `map_reduce_style.py` script on all four datasets and recorded the exe
 
 ### Jan 2022 - map_reduce_style
 
-**Most Frequent Visitors:**
+**Top 10 Most Frequent Visitors:**
 
 - WILKINS, ELIZABETH W: 6 visits
 - KUKLISH, MATILDA N: 5 visits
@@ -49,7 +49,7 @@ I ran the `map_reduce_style.py` script on all four datasets and recorded the exe
 - HALLII, TONY L: 5 visits
 - EMANUEL, RAHM I: 4 visits
 
-**Most Frequent Visitees:**
+**Top 10 Most Frequent Visitees:**
 
 - POTUS: 117 visits
 - Dirksen, Ward: 43 visits
@@ -62,7 +62,7 @@ I ran the `map_reduce_style.py` script on all four datasets and recorded the exe
 - Ludwig, Michael: 23 visits
 - Nelson, David: 22 visits
 
-**Most Frequent Visitor-Visitee Combinations:**
+**Top 10 Most Frequent Visitor-Visitee Combinations:**
 
 - WILKINS, ELIZABETH W -> Puri, Arjun: 6 visits
 - GONZALUDO, ALEXIS C -> Doyle, Solis: 5 visits
@@ -98,7 +98,7 @@ I ran the `map_reduce_style.py` script on all four datasets and recorded the exe
 
 ### Jan 2022 - dataframe_style
 
-**Most Frequent Visitors:**
+**Top 10 Most Frequent Visitors:**
 | Visitor Full Name | Visit Count |
 |-----------------------|-------------|
 | WILKINS, ELIZABETH, W | 6 |
@@ -112,7 +112,7 @@ I ran the `map_reduce_style.py` script on all four datasets and recorded the exe
 | GONZALUDO, ALEXIS, C | 5 |
 | JAVIER, PEPITO, M | 4 |
 
-**Most Frequent Visitees:**
+**Top 10 Most Frequent Visitees:**
 | Visitee Full Name | Visit Count |
 |----------------------|-------------|
 | POTUS | 117 |
@@ -126,7 +126,7 @@ I ran the `map_reduce_style.py` script on all four datasets and recorded the exe
 | Ludwig, Michael | 23 |
 | Nelson, David | 22 |
 
-**Most Frequent Visitor-Visitee Combinations:**
+**Top 10 Most Frequent Visitor-Visitee Combinations:**
 | Visitor-Visitee Combo | Combo Count |
 |------------------------------------------|-------------|
 | WILKINS, ELIZABETH, W -> Puri, Arjun | 6 |
@@ -165,7 +165,7 @@ I ran the `map_reduce_style.py` script on all four datasets and recorded the exe
 
 ### Feb 2022 - map_reduce_style
 
-**Most Frequent Visitors:**
+**Top 10 Most Frequent Visitors:**
 
 - HALLII, TONY L: 20 visits
 - KUKLISH, MATILDA N: 13 visits
@@ -178,7 +178,7 @@ I ran the `map_reduce_style.py` script on all four datasets and recorded the exe
 - ORTON, JOSHUA M: 5 visits
 - HEIL, KENNETH E: 5 visits
 
-**Most Frequent Visitees:**
+**Top 10 Most Frequent Visitees:**
 
 - Via, Dan: 232 visits
 - POTUS: 200 visits
@@ -191,7 +191,7 @@ I ran the `map_reduce_style.py` script on all four datasets and recorded the exe
 - Vallejo, Jessika: 35 visits
 - Durkovich, Caitlin: 32 visits
 
-**Most Frequent Visitor-Visitee Combinations:**
+**Top 10 Most Frequent Visitor-Visitee Combinations:**
 
 - HALLII, TONY L -> Colton, Amelia: 20 visits
 - JIMENEZ, LUIS A -> Macklin, Marina: 11 visits
@@ -227,7 +227,7 @@ I ran the `map_reduce_style.py` script on all four datasets and recorded the exe
 
 ### Feb 2022 - dataframe_style
 
-**Most Frequent Visitors:**
+**Top 10 Most Frequent Visitors:**
 | Visitor Full Name | Visit Count |
 |-----------------------|-------------|
 | HALLII, TONY, L | 20 |
@@ -241,7 +241,7 @@ I ran the `map_reduce_style.py` script on all four datasets and recorded the exe
 | ORTON, JOSHUA, M | 5 |
 | BOUDREAU, RYAN, R | 5 |
 
-**Most Frequent Visitees:**
+**Top 10 Most Frequent Visitees:**
 | Visitee Full Name | Visit Count |
 |-----------------------|-------------|
 | Via, Dan | 232 |
@@ -255,7 +255,7 @@ I ran the `map_reduce_style.py` script on all four datasets and recorded the exe
 | Vallejo, Jessika | 35 |
 | Rogers, Melissa | 32 |
 
-**Most Frequent Visitor-Visitee Combinations:**
+**Top 10 Most Frequent Visitor-Visitee Combinations:**
 | Visitor-Visitee Combo | Combo Count |
 |------------------------------------------|-------------|
 | HALLII, TONY, L -> Colton, Amelia | 20 |
@@ -294,7 +294,7 @@ I ran the `map_reduce_style.py` script on all four datasets and recorded the exe
 
 ### Mar 2022 - map_reduce_style
 
-**Most Frequent Visitors:**
+**Top 10 Most Frequent Visitors:**
 
 - HOCHSTEIN, AMOS N: 17 visits
 - KHARE, SANCHI N: 13 visits
@@ -307,7 +307,7 @@ I ran the `map_reduce_style.py` script on all four datasets and recorded the exe
 - ROSENBERG, ELIZABETH N: 7 visits
 - MENDRALA, EMILY N: 7 visits
 
-**Most Frequent Visitees:**
+**Top 10 Most Frequent Visitees:**
 
 - POTUS: 1369 visits
 - Nelson, David: 322 visits
@@ -320,7 +320,7 @@ I ran the `map_reduce_style.py` script on all four datasets and recorded the exe
 - Leaf, Barbara: 62 visits
 - Patchin, Ana: 60 visits
 
-**Most Frequent Visitor-Visitee Combinations:**
+**Top 10 Most Frequent Visitor-Visitee Combinations:**
 
 - KHARE, SANCHI N -> Saba, Caroline: 13 visits
 - ABEYTA, FELIX A -> McLeod, Cora: 8 visits
@@ -356,7 +356,7 @@ I ran the `map_reduce_style.py` script on all four datasets and recorded the exe
 
 ### Mar 2022 - dataframe_style
 
-**Most Frequent Visitors:**
+**Top 10 Most Frequent Visitors:**
 | Visitor Full Name | Visit Count |
 |-----------------------|-------------|
 | HOCHSTEIN, AMOS, N | 17 |
@@ -370,7 +370,7 @@ I ran the `map_reduce_style.py` script on all four datasets and recorded the exe
 | FOK, JOHN, H | 7 |
 | SHIFFLETT, MARK, A | 7 |
 
-**Most Frequent Visitees:**
+**Top 10 Most Frequent Visitees:**
 | Visitee Full Name | Visit Count |
 |-----------------------|-------------|
 | POTUS | 1369 |
@@ -384,7 +384,7 @@ I ran the `map_reduce_style.py` script on all four datasets and recorded the exe
 | Leaf, Barbara | 62 |
 | Patchin, Ana | 60 |
 
-**Most Frequent Visitor-Visitee Combinations:**
+**Top 10 Most Frequent Visitor-Visitee Combinations:**
 | Visitor-Visitee Combo | Combo Count |
 |------------------------------------------|-------------|
 | KHARE, SANCHI, N -> Saba, Caroline | 13 |
@@ -423,7 +423,7 @@ I ran the `map_reduce_style.py` script on all four datasets and recorded the exe
 
 ### Apr 2022 - map_reduce_style
 
-**Most Frequent Visitors:**
+**Top 10 Most Frequent Visitors:**
 
 - CHAMPION, REYNALDO N: 18 visits
 - SABO, ERIC D: 12 visits
@@ -436,7 +436,7 @@ I ran the `map_reduce_style.py` script on all four datasets and recorded the exe
 - TRIBBETT, ANDREW S: 9 visits
 - BETHUNE, JALEN S: 8 visits
 
-**Most Frequent Visitees:**
+**Top 10 Most Frequent Visitees:**
 
 - Office, Visitors: 4618 visits
 - POTUS: 1938 visits
@@ -449,7 +449,7 @@ I ran the `map_reduce_style.py` script on all four datasets and recorded the exe
 - Brown, Blake: 91 visits
 - Taylor, Gabrielle: 85 visits
 
-**Most Frequent Visitor-Visitee Combinations:**
+**Top 10 Most Frequent Visitor-Visitee Combinations:**
 
 - TRIBBETT, ANDREW S -> Doiron, Jessica: 9 visits
 - CHAMPION, REYNALDO N -> Irizarry, Marilis: 8 visits
@@ -485,7 +485,7 @@ I ran the `map_reduce_style.py` script on all four datasets and recorded the exe
 
 ### Apr 2022 - dataframe_style
 
-**Most Frequent Visitors:**
+**Top 10 Most Frequent Visitors:**
 | Visitor Full Name | Visit Count |
 |-----------------------|-------------|
 | CHAMPION, REYNALDO, N | 18 |
@@ -499,7 +499,7 @@ I ran the `map_reduce_style.py` script on all four datasets and recorded the exe
 | TERRY, CHARLES, E | 9 |
 | BRIGGS, CHRISTIANA, N | 8 |
 
-**Most Frequent Visitees:**
+**Top 10 Most Frequent Visitees:**
 | Visitee Full Name | Visit Count |
 |-----------------------|-------------|
 | Office, Visitors | 4618 |
@@ -513,7 +513,7 @@ I ran the `map_reduce_style.py` script on all four datasets and recorded the exe
 | Brown, Blake | 91 |
 | Taylor, Gabrielle | 85 |
 
-**Most Frequent Visitor-Visitee Combinations:**
+**Top 10 Most Frequent Visitor-Visitee Combinations:**
 | Visitor-Visitee Combo | Combo Count |
 |------------------------------------------|-------------|
 | TRIBBETT, ANDREW, S -> Doiron, Jessica | 9 |
