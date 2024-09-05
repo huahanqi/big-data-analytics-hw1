@@ -13,8 +13,9 @@ df = spark.read.csv(file_path, header=True, inferSchema=True)
 start_time = datetime.now()
 
 # 1. The 10 most frequent visitors
+# how to create new col using concat/_ws https://stackoverflow.com/questions/31450846/concatenate-columns-in-apache-spark-dataframe
 top_10_visitors = df.withColumn("VISITOR_FULL_NAME", 
-                                sf.concat_ws(", ", "NAMELAST", "NAMEFIRST", sf.coalesce("NAMEMID", sf.lit('')))) \
+                                sf.concat_ws(", ", "NAMELAST", "NAMEFIRST", "NAMEMID")) \
                     .groupBy("VISITOR_FULL_NAME") \
                     .count() \
                     .orderBy('count', ascending=False) \
@@ -38,7 +39,7 @@ top_10_visitees.show(truncate=False)
 # 3. The 10 most frequent visitor-visitee combinations
 top_10_combinations = df.withColumn("VISITOR_VISITEE_COMBO", 
                                     sf.concat_ws(" -> ", 
-                                                sf.concat_ws(", ", "NAMELAST", "NAMEFIRST", sf.coalesce("NAMEMID", sf.lit(''))), 
+                                                sf.concat_ws(", ", "NAMELAST", "NAMEFIRST", "NAMEMID"), 
                                                 sf.concat_ws(", ", "VISITEE_NAMELAST", "VISITEE_NAMEFIRST"))) \
                         .groupBy("VISITOR_VISITEE_COMBO") \
                         .count() \

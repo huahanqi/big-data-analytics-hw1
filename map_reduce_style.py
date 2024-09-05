@@ -16,7 +16,7 @@ start_time = datetime.now()
 
 # 1. The 10 most frequent visitors
 top_10_visitors = rdd \
-    .map(lambda row: (f"{row['NAMELAST']}, {row['NAMEFIRST']} {row['NAMEMID'] if row['NAMEMID'] else ''}", 1)) \
+    .map(lambda r: ("{}, {}, {}".format(r['NAMELAST'], r['NAMEFIRST'], r['NAMEMID']), 1)) \
     .reduceByKey(lambda a, b: a + b) \
     .sortBy(lambda x: x[1], ascending=False) \
     .take(10)
@@ -27,7 +27,7 @@ for visitor in top_10_visitors:
 
 # 2. The 10 most frequently visited people
 top_10_visitees = rdd \
-    .map(lambda row: (f"{row['VISITEE_NAMELAST']}, {row['VISITEE_NAMEFIRST']}", 1)) \
+    .map(lambda r: ("{}, {}".format(r['VISITEE_NAMELAST'], r['VISITEE_NAMEFIRST']), 1)) \
     .reduceByKey(lambda a, b: a + b) \
     .sortBy(lambda x: x[1], ascending=False) \
     .take(10) 
@@ -38,7 +38,7 @@ for visitee in top_10_visitees:
 
 # 3. The 10 most frequent visitor-visitee combinations
 top_10_combinations = rdd \
-    .map(lambda row: (f"{row['NAMELAST']}, {row['NAMEFIRST']} {row['NAMEMID'] if row['NAMEMID'] else ''} -> {row['VISITEE_NAMELAST']}, {row['VISITEE_NAMEFIRST']}", 1)) \
+    .map(lambda r: ("{}, {}, {} -> {}, {}".format(r['NAMELAST'], r['NAMEFIRST'], r['NAMEMID'], r['VISITEE_NAMELAST'], r['VISITEE_NAMEFIRST']), 1)) \
     .reduceByKey(lambda a, b: a + b) \
     .sortBy(lambda x: x[1], ascending=False) \
     .take(10)
@@ -50,7 +50,7 @@ for combination in top_10_combinations:
 
 # 4. The 3 most frequent meeting locations
 top_3_locations = rdd \
-    .map(lambda row: (row['MEETING_LOC'], 1)) \
+    .map(lambda r: (r['MEETING_LOC'], 1)) \
     .reduceByKey(lambda a, b: a + b) \
     .sortBy(lambda x: x[1], ascending=False) \
     .take(3)
@@ -61,7 +61,7 @@ for location, count in top_3_locations:
 
 # 5. The 10 most frequent callers
 top_10_callers = rdd \
-    .map(lambda row: (f"{row['CALLER_NAME_LAST']}, {row['CALLER_NAME_FIRST']}", 1)) \
+    .map(lambda r: ("{}, {}".format(r['CALLER_NAME_LAST'], r['CALLER_NAME_FIRST']), 1)) \
     .reduceByKey(lambda a, b: a + b) \
     .sortBy(lambda x: x[1], ascending=False) \
     .take(10)
